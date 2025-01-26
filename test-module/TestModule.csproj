@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>TestModule</RootNamespace>
+    <AssemblyName>TestModule</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\data-acquisition\DataAcquisition.csproj" />
+    <ProjectReference Include="..\data-processing\DataProcessing.csproj" />
+    <ProjectReference Include="..\data-storage\DataStorage.csproj" />
+    <ProjectReference Include="..\integrations\Integrations.csproj" />
+    <ProjectReference Include="..\frontend\Frontend.csproj" />
+    <ProjectReference Include="..\api-gateway\ApiGateway.csproj" />
+    <PackageReference Include="SpecFlow" Version="3.9.24" />
+    <PackageReference Include="Playwright" Version="1.20.0" />
+  </ItemGroup>
+
+</Project>
